@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0 0;
+    }
+    
+    .circle1 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: red;
+        margin: 11rem 31rem;
+        animation: mymove 2s infinite;
+    }
+    
+    @keyframes mymove {
+        0% {
+            left: 0px;
+            background-color: red;
+        }
+        to {
+            left: 190px;
+            background-color: yellow;
+        }
+    }
+    
+    .circle2 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: yellow;
+        margin: 11rem 43rem;
+        animation: mymove1 2s infinite;
+    }
+    
+    @keyframes mymove1 {
+        0% {
+            top: 0px;
+            background-color: yellow;
+        }
+        to {
+            top: 190px;
+            background-color: blue;
+        }
+    }
+    
+    .circle3 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 23rem 31rem;
+        animation: mymove2 2s infinite;
+    }
+    
+    @keyframes mymove2 {
+        0% {
+            bottom: -100px;
+            background-color: green;
+        }
+        to {
+            bottom: 98px;
+            background-color: red;
+        }
+    }
+    
+    .circle4 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: blue;
+        margin: 23rem 43rem;
+        animation: mymove3 2s infinite;
+    }
+    
+    @keyframes mymove3 {
+        0% {
+            right: -50px;
+            background-color: blue;
+        }
+        to {
+            right: 133px;
+            background-color: green;
+        }
+    }
+    /*     
+    .box1 {
+        width: 4rem;
+        height: 2.5em;
+        align-items: center;
+        margin: 32rem 33rem;
+        background-color: lightblue;
+        cursor: pointer;
+    }
+    
+    .box2 {
+        width: 4rem;
+        height: 2.5em;
+        align-items: center;
+        margin-left: -29rem;
+        background-color: lightblue;
+        cursor: pointer;
+    } */
+</style>
+
+<body>
+    <section id="Rubai">
+        <div id="circle-row">
+            <div class="circle1" id="circle01"></div>
+            <div class="circle2" id="circle02"></div>
+            <div class="circle3" id="circle03"></div>
+            <div class="circle4" id="circle04"></div>
+        </div>
+        <!-- <div id="box-row">
+            <button class="box1" id="box10" onclick="myFunction()">Start</button>
+            <button class="box2" id="box20">Stop</button>
+        </div> -->
+
+    </section>
+</body>
+
+</html>
